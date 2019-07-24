@@ -32,6 +32,10 @@ export default {
           param: 'type', // 参数名
           isNeed: 0, // 是否必须 1 为必须、0为非必须
         },
+        {
+          param: 'sign', // 参数名
+          isNeed: 1, // 是否必须 1 为必须、0为非必须
+        },
       ],
       get: [
         {
@@ -50,7 +54,7 @@ export default {
 import vsApi from './vsApi';
 import apiList from './apiList';
 
-export default vsApi({
+const api =  vsApi({
   baseURL: '<baseURL>',
   env: 'weapp', // env 取值范围：[weapp, aliapp, swan, ttapp]；weapp -- 微信小程序，aliapp -- 支付宝小程序，swan -- 百度小程序，ttapp -- 头条小程序
   appKey: '<appKey>',
@@ -74,4 +78,24 @@ export default vsApi({
   },
 });
 
+export default api;
+```
+
+接口调用方式
+
+```javascript
+// app_key和sign内部封装自动注入到传递到请求接口参数
+api.getList({
+    data: {
+        token: 'mockToken',
+        type: 1,
+        sex: 1,
+    }
+})
+.then(res => {
+    console.log(res);
+})
+.catch(err => {
+    console.log(err);
+});
 ```
