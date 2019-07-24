@@ -1,5 +1,11 @@
 ## 使用文档
 
+### 安装
+
+```shell
+npm install -S cnfapi-mini-vs
+```
+
 创建`apiList.js`文件，并且修改为：
 
 ```javascript
