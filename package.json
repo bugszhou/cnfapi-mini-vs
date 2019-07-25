@@ -28,7 +28,7 @@
         "@babel/runtime": "^7.5.4",
         "@babel/runtime-corejs2": "^7.5.4",
         "cnfapi-miniprogram": "^1.0.7",
-        "mksign": "^1.1.7"
+        "mksign": "^1.1.9"
     },
     "devDependencies": {
         "@babel/core": "^7.5.4",
