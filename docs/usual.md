@@ -51,7 +51,7 @@ export default {
 ```
 
 ```javascript
-import vsApi from './vsApi';
+import vsApi from 'cnfapi-mini-vs';
 import apiList from './apiList';
 
 const api =  vsApi({
