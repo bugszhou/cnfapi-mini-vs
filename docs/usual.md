@@ -58,7 +58,7 @@ const api =  vsApi({
   baseURL: '<baseURL>',
   env: 'weapp', // env 取值范围：[weapp, aliapp, swan, ttapp]；weapp -- 微信小程序，aliapp -- 支付宝小程序，swan -- 百度小程序，ttapp -- 头条小程序
   appKey: '<appKey>',
-  appSecret: '<appSecret>'',
+  appSecret: '<appSecret>',
   apiList,
   // 是否开启拦截器，return true时会执行resInterceptor方法
   // 所有接口公用的拦截器
