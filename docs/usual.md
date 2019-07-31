@@ -101,3 +101,37 @@ api.getList({
 });
 ```
 - task功能[点击查看](https://developers.weixin.qq.com/miniprogram/dev/api/network/request/RequestTask.html)
+
+### 钩子函数
+
+1. 发送请求前`cnfapi:req:before`
+
+```javascript
+api.on('cnfapi:req:before', (data) => {
+    // 业务逻辑
+});
+```
+
+2. 请求成功`cnfapi:res:resolve`
+
+```javascript
+api.on('cnfapi:res:resolve', (data) => {
+    // 业务逻辑
+});
+```
+
+3. 请求reject`cnfapi:res:reject`
+
+```javascript
+api.on('cnfapi:res:reject', (data) => {
+    // 业务逻辑
+});
+```
+
+4. 请求发生错误`cnfapi:res:catch`
+
+```javascript
+api.on('cnfapi:res:catch', (data) => {
+    // 业务逻辑
+});
+```
