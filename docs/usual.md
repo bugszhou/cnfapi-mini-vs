@@ -86,6 +86,7 @@ export default api;
 ```javascript
 // app_key和sign内部封装自动注入到传递到请求接口参数
 api.getList({
+     getRequestTask: (tesk) => {}, // 获取请求任务对象task，task对象可对中断请求任务等功能
     data: {
         token: 'mockToken',
         type: 1,
@@ -99,3 +100,4 @@ api.getList({
     console.log(err);
 });
 ```
+- task功能[点击查看](https://developers.weixin.qq.com/miniprogram/dev/api/network/request/RequestTask.html)
