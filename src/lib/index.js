@@ -11,7 +11,7 @@ export default function(
     apiList,
     resInterceptor,
     openResInterceptor,
-    headers: {
+    headers = {
       'Content-Type': 'application/json',
     },
   } = { apiList: {} },
