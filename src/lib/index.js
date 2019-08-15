@@ -11,15 +11,16 @@ export default function(
     apiList,
     resInterceptor,
     openResInterceptor,
+    headers: {
+      'Content-Type': 'application/json',
+    },
   } = { apiList: {} },
 ) {
   const api = new Api({
     baseURL,
     env, // 使用环境：weapp - 微信小程序、aliapp - 支付宝小程序、swan - 百度小程序
     timeout: 10000, // 10s超时
-    headers: {
-      'Content-Type': 'application/json',
-    },
+    headers,
     resSuccessCallback(data, next) {
       if (data.retcode === 200) {
         next(null, data.data, data.retcode);
