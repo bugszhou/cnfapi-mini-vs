@@ -7,7 +7,7 @@ export default function(
     baseURL = '',
     env = 'weapp',
     appKey = '',
-    appSecret = '',
+    appCode = '',
     apiList,
     resInterceptor,
     openResInterceptor,
@@ -62,7 +62,7 @@ export default function(
         signData[item] = data[item];
       }
     });
-    data.sign = defaultSign(signData, [appSecret]);
+    data.sign = defaultSign(signData, [appCode]);
     next({
       ...apiOpts,
       data,
