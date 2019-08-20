@@ -11,6 +11,7 @@ export default function(
     apiList,
     resInterceptor,
     openResInterceptor,
+    resSuccessCallback,
     headers = {
       'Content-Type': 'application/json',
     },
@@ -22,6 +23,9 @@ export default function(
     timeout: 10000, // 10s超时
     headers,
     resSuccessCallback(data, next) {
+      if (resSuccessCallback && typeof resSuccessCallback === 'function') {
+        return resSuccessCallback(data, next);
+      }
       if (data.retcode === 200) {
         next(null, data.data, data.retcode);
       } else {
