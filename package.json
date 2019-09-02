@@ -20,7 +20,7 @@
         "fix": "npm run lint -- --fix",
         "husky": "node node_modules/husky/lib/installer/bin install",
         "unhusky": "node node_modules/husky/lib/installer/bin uninstall",
-        "cl": "ziu cl -p angular -i CHANGELOG.md -s -a && git add CHANGELOG.md",
+        "cl": "ziu cl -p angular -i CHANGELOG.md -s -r 1000",
         "postversion": "ziu cl -p angular -i CHANGELOG.md -s -a -r && git add CHANGELOG.md package.json && git add -u",
         "commit": "ziu commit",
         "prepublishOnly": "npm run build"
