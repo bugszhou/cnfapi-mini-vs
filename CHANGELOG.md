@@ -1,3 +1,18 @@
+<a name="2.0.2"></a>
+## [2.0.2](https://github.com/bugszhou/cnfapi-mini-vs/compare/v2.0.1...v2.0.2) (2019-09-03)
+
+
+### Bug Fixes
+
+* 非空值判断 ([10373dc](https://github.com/bugszhou/cnfapi-mini-vs/commit/10373dc))
+
+
+### Features
+
+* Rm corejs2 ([9300941](https://github.com/bugszhou/cnfapi-mini-vs/commit/9300941))
+
+
+
 <a name="2.0.1"></a>
 ## [2.0.1](https://github.com/bugszhou/cnfapi-mini-vs/compare/v2.0.0...v2.0.1) (2019-09-03)
 
