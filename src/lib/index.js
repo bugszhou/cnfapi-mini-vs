@@ -59,7 +59,9 @@ export default function(
     data.app_key = appKey;
     Object.keys(data).forEach((item) => {
       if (signKeys.indexOf(item) > -1) {
-        signData[item] = data[item];
+        if (signData[item] || signData[item] === 0) {
+          signData[item] = data[item];
+        }
       }
     });
     data.sign = defaultSign(signData, [appCode]);
