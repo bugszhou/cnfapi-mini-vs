@@ -1,3 +1,18 @@
+<a name="2.0.1"></a>
+## [2.0.1](https://github.com/bugszhou/cnfapi-mini-vs/compare/v2.0.0...v2.0.1) (2019-09-03)
+
+
+### Bug Fixes
+
+* Modify changelog ([249ffe6](https://github.com/bugszhou/cnfapi-mini-vs/commit/249ffe6))
+
+
+### Features
+
+* 去除签名数据中无值的字段 ([3a2aa08](https://github.com/bugszhou/cnfapi-mini-vs/commit/3a2aa08))
+
+
+
 <a name="2.0.0"></a>
 # [2.0.0](https://github.com/bugszhou/cnfapi-mini-vs/compare/v1.3.1...v2.0.0) (2019-08-20)
 
