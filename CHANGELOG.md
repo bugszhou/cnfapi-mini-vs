@@ -1,3 +1,13 @@
+<a name="2.1.0"></a>
+# [2.1.0](https://github.com/bugszhou/cnfapi-mini-vs/compare/v2.0.4...v2.1.0) (2019-09-12)
+
+
+### Features
+
+* Upgrade mksign ([02471ee](https://github.com/bugszhou/cnfapi-mini-vs/commit/02471ee))
+
+
+
 <a name="2.0.4"></a>
 ## [2.0.4](https://github.com/bugszhou/cnfapi-mini-vs/compare/v2.0.3...v2.0.4) (2019-09-12)
 

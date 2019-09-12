@@ -10265,6 +10265,13 @@
 
   function filterNull(){var params=0<arguments.length&&void 0!==arguments[0]?arguments[0]:{};if(!isObject_1$1(params)||isEmpty_1(params))throw new Error("params is not Object or no value in filterNull function!");var tmp={};return keys$1$1(params).forEach(function(key){var val=params[key];(0===val||val)&&(tmp[key]=val);}),tmp}
 
+  var $JSON$2 = _core$1.JSON || (_core$1.JSON = { stringify: JSON.stringify });
+  var stringify$2 = function stringify(it) { // eslint-disable-line no-unused-vars
+    return $JSON$2.stringify.apply($JSON$2, arguments);
+  };
+
+  var stringify$1$2 = stringify$2;
+
   // 7.2.2 IsArray(argument)
 
   var _isArray$1 = Array.isArray || function isArray(arg) {
@@ -10610,7 +10617,7 @@
 
   var slicedToArray = _slicedToArray;
 
-  function getSignStr(){var params=0<arguments.length&&void 0!==arguments[0]?arguments[0]:[[]],noKeys=[],strArray=[];return params.forEach(function(_ref){var _ref2=slicedToArray(_ref,2),key=_ref2[0],val=_ref2[1];if(0!==val&&!val)throw new Error("param.".concat(key," have not value! pls check!!"));0===key||key?strArray.push("".concat(key,"=").concat(val)):noKeys.push(val);}),"".concat(strArray.join("&")).concat(noKeys.join(""))}
+  function getSignStr(){var params=0<arguments.length&&void 0!==arguments[0]?arguments[0]:[[]],noKeys=[],strArray=[];return params.forEach(function(_ref){var _ref2=slicedToArray(_ref,2),key=_ref2[0],val=_ref2[1];if(0!==val&&!val)throw new Error("param.".concat(key," have not value! pls check!!"));0===key||key?strArray.push(isObject_1$1(val)||isArray_1$1(val)?"".concat(key,"=").concat(stringify$1$2(val)):"".concat(key,"=").concat(val)):noKeys.push(val);}),"".concat(strArray.join("&")).concat(noKeys.join(""))}
 
   function defaultGetSignData(){var params=0<arguments.length&&void 0!==arguments[0]?arguments[0]:{},lastParams=1<arguments.length&&void 0!==arguments[1]?arguments[1]:[],filterData=sort(filterNull(params));if(!isArray_1$1(lastParams))throw new Error("The second argument is not Array or no value in defaultGetSignData function!");return lastParams.forEach(function(param){if(isObject_1$1(param)){if(!isObject_1$1(param)||isEmpty_1(param))throw new Error("The second argument's is not object or no value in defaultGetSignData function!");entries$1(param).forEach(function(_ref){var _ref2=slicedToArray(_ref,2),key=_ref2[0],val=_ref2[1];filterData.push([key,val]);});}else{if(0!==param&&!param)throw new Error("The second argument's no value in defaultGetSignData function!");filterData.push(["",param]);}}),getSignStr(filterData)}
 
