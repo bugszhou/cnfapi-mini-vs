@@ -1,3 +1,8 @@
+<a name="3.0.0"></a>
+# [3.0.0](https://github.com/bugszhou/cnfapi-mini-vs/compare/v2.1.0...v3.0.0) (2019-09-19)
+
+
+
 <a name="2.1.0"></a>
 # [2.1.0](https://github.com/bugszhou/cnfapi-mini-vs/compare/v2.0.4...v2.1.0) (2019-09-12)
 
