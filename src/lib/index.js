@@ -36,7 +36,10 @@ export default function(
     },
     openResInterceptor(res) {
       if (typeof openResInterceptor === 'function') {
-        return openResInterceptor.call(this, res);
+        return openResInterceptor.call(this, {
+          ...res,
+          retcode: res ? res.code : '',
+        });
       }
       return false;
     },
