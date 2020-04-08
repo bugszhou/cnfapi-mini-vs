@@ -1,3 +1,12 @@
+## [4.0.5](https://github.com/bugszhou/cnfapi-mini-vs/compare/v4.0.3...v4.0.5) (2020-04-08)
+
+
+### Bug Fixes
+
+* 初始值错误 ([4d03339](https://github.com/bugszhou/cnfapi-mini-vs/commit/4d03339aabc1de3cebd39d7ce5f7585507ae2969))
+
+
+
 ## [4.0.3](https://github.com/bugszhou/cnfapi-mini-vs/compare/v4.0.2...v4.0.3) (2020-04-08)
 
 
