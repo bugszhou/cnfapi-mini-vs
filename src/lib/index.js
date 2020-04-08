@@ -26,13 +26,13 @@ export default function(
       if (resSuccessCallback && typeof resSuccessCallback === 'function') {
         return resSuccessCallback(data, next);
       }
-      if (data.retcode === 200) {
-        return next(null, data.data, data.retcode);
+      if (data.code === 200) {
+        return next(null, data.data, data.code);
       }
       return next({
         msg: data.msg,
-        retcode: data.retcode,
-      }, {}, data.retcode);
+        retcode: data.code,
+      }, {}, data.code);
     },
     openResInterceptor(res) {
       if (typeof openResInterceptor === 'function') {
