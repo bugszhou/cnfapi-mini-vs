@@ -1,5 +1,5 @@
 import Api from 'cnfapi-miniprogram';
-import { defaultSign } from 'mksign';
+import sha256 from 'hash.js/lib/hash/sha/256';
 
 // eslint-disable-next-line
 export default function(
@@ -50,25 +50,22 @@ export default function(
 
   // eslint-disable-next-line
   api._before = function apiBefore(apiOpts, apiConf, next) {
-    const { signKeys } = apiConf,
-      signData = {};
+    const { isSkipSign, params } = apiConf;
     let { data } = apiOpts;
-    if (!data) {
-      data = {};
-    }
-    data.app_key = appKey;
-    Object.keys(data).forEach((item) => {
-      if (signKeys.indexOf(item) > -1) {
-        if (data[item] || data[item] === 0) {
-          signData[item] = data[item];
-        }
+    if (!isSkipSign) {
+      if (data === null || data === undefined) {
+        data = {};
       }
-    });
-    try {
-      data.sign = defaultSign(signData, [appCode]);
-    } catch (e) {
-      console.error(e);
-      data.sign = '';
+      const postDataKeys = params.post;
+      const signData = {};
+      postDataKeys.forEach((item) => {
+        const val = data[item.param];
+        if (val !== null && val !== undefined) {
+          signData[item.param] = val;
+        }
+      });
+      apiConf.headers['Authorization-AppKey'] = appKey;
+      apiConf.headers['Authorization-Sign'] = sha256().update(`${appKey}${JSON.stringify(signData)}${headers['Authorization-Token'] || ''}${appCode}`).digest('hex');
     }
     next({
       ...apiOpts,
