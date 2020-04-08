@@ -59,17 +59,25 @@ export default function(
       if (data === null || data === undefined) {
         data = {};
       }
-      const postDataKeys = params.post;
-      const signData = {};
+      let postDataKeys = [];
+      if (params && Array.isArray(params.post)) {
+        postDataKeys = params.post;
+      }
+      const signData = data;
       postDataKeys.forEach((item) => {
         const val = data[item.param];
         if (val !== null && val !== undefined) {
           signData[item.param] = val;
         }
-      });// eslint-disable-next-line
+      });
+      if (!apiConf.headers) {
+        // eslint-disable-next-line
+        apiConf.headers = {};
+      }
+      // eslint-disable-next-line
       apiConf.headers['Authorization-AppKey'] = appKey;
       // eslint-disable-next-line
-      apiConf.headers['Authorization-Sign'] = sha256().update(`${appKey}${JSON.stringify(signData)}${headers['Authorization-Token'] || ''}${appCode}`).digest('hex');
+      apiConf.headers['Authorization-Sign'] = sha256().update(`${appKey}${JSON.stringify(signData)}${apiConf.headers['Authorization-Token'] || ''}${appCode}`).digest('hex');
     }
     next({
       ...apiOpts,
