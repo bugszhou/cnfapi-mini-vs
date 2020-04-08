@@ -1,3 +1,12 @@
+## [4.0.3](https://github.com/bugszhou/cnfapi-mini-vs/compare/v4.0.2...v4.0.3) (2020-04-08)
+
+
+### Bug Fixes
+
+* 增加兼容性 ([5b3ac00](https://github.com/bugszhou/cnfapi-mini-vs/commit/5b3ac002ff9a9ed079fdafc90adce434c53b643b))
+
+
+
 ## [4.0.2](https://github.com/bugszhou/cnfapi-mini-vs/compare/v4.0.1...v4.0.2) (2020-04-08)
 
 
