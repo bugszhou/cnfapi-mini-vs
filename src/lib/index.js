@@ -63,8 +63,9 @@ export default function(
         if (val !== null && val !== undefined) {
           signData[item.param] = val;
         }
-      });
+      });// eslint-disable-next-line
       apiConf.headers['Authorization-AppKey'] = appKey;
+      // eslint-disable-next-line
       apiConf.headers['Authorization-Sign'] = sha256().update(`${appKey}${JSON.stringify(signData)}${headers['Authorization-Token'] || ''}${appCode}`).digest('hex');
     }
     next({
