@@ -1,3 +1,12 @@
+## [4.0.6](https://github.com/bugszhou/cnfapi-mini-vs/compare/v4.0.5...v4.0.6) (2020-04-08)
+
+
+### Features
+
+* Add ctx ([dba5dad](https://github.com/bugszhou/cnfapi-mini-vs/commit/dba5dad958713965e50d2169137585f23b59d3d6))
+
+
+
 ## [4.0.5](https://github.com/bugszhou/cnfapi-mini-vs/compare/v4.0.3...v4.0.5) (2020-04-08)
 
 
