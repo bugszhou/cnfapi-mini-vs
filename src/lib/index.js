@@ -56,14 +56,15 @@ export default function(
     const { isSkipSign, params } = apiConf;
     let { data } = apiOpts;
     if (!isSkipSign) {
+      let signData = {};
       if (data === null || data === undefined) {
         data = {};
+        signData = data;
       }
       let postDataKeys = [];
       if (params && Array.isArray(params.post)) {
         postDataKeys = params.post;
       }
-      const signData = data;
       postDataKeys.forEach((item) => {
         const val = data[item.param];
         if (val !== null && val !== undefined) {
