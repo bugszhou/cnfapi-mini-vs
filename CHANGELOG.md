@@ -1,3 +1,21 @@
+# [4.0.0](https://github.com/bugszhou/cnfapi-mini-vs/compare/v2.0.0...v4.0.0) (2020-04-08)
+
+
+### Bug Fixes
+
+* Modify changelog ([249ffe6](https://github.com/bugszhou/cnfapi-mini-vs/commit/249ffe68c947b6f837e80f0d8b1d87d863c369f5))
+* 非空值判断 ([10373dc](https://github.com/bugszhou/cnfapi-mini-vs/commit/10373dc57a3364a1eefbae6d9339c811b87a4f9f))
+
+
+### Features
+
+* Rm corejs2 ([9300941](https://github.com/bugszhou/cnfapi-mini-vs/commit/9300941d55330077b49d37db4826fb01fe0952e2))
+* Upgrade mksign ([02471ee](https://github.com/bugszhou/cnfapi-mini-vs/commit/02471ee95e1b8c10a099236323fc80741ef24b08))
+* 修改签名方式 ([1496a19](https://github.com/bugszhou/cnfapi-mini-vs/commit/1496a19aa9729df1e8d7d905baf02bd2b960ab6e))
+* 去除签名数据中无值的字段 ([3a2aa08](https://github.com/bugszhou/cnfapi-mini-vs/commit/3a2aa083adb38cf003a263dd6d1b0d6a162dd35e))
+
+
+
 <a name="3.0.0"></a>
 # [3.0.0](https://github.com/bugszhou/cnfapi-mini-vs/compare/v2.1.0...v3.0.0) (2019-09-19)
 
