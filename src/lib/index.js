@@ -45,7 +45,7 @@ export default function(
     },
     resInterceptor(serverData, next) {
       if (typeof resInterceptor === 'function') {
-        return resInterceptor.bind(this)(serverData, next);
+        return resInterceptor.bind(this)(serverData, next, this);
       }
       return next();
     },
