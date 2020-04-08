@@ -1,3 +1,12 @@
+## [4.0.2](https://github.com/bugszhou/cnfapi-mini-vs/compare/v4.0.1...v4.0.2) (2020-04-08)
+
+
+### Features
+
+* 兼容retcode ([291088e](https://github.com/bugszhou/cnfapi-mini-vs/commit/291088e72037e77588eaf2554931dd8eae6de366))
+
+
+
 ## [4.0.1](https://github.com/bugszhou/cnfapi-mini-vs/compare/v4.0.0...v4.0.1) (2020-04-08)
 
 
