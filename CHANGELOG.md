@@ -1,3 +1,8 @@
+<a name="4.1.0"></a>
+# [4.1.0](https://github.com/bugszhou/cnfapi-mini-vs/compare/v4.0.6...v4.1.0) (2020-05-18)
+
+
+
 ## [4.0.6](https://github.com/bugszhou/cnfapi-mini-vs/compare/v4.0.5...v4.0.6) (2020-04-08)
 
 
