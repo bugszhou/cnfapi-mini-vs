@@ -24,7 +24,7 @@ export default function(
     headers,
     resSuccessCallback(data, next) {
       if (resSuccessCallback && typeof resSuccessCallback === 'function') {
-        return resSuccessCallback(data, next);
+        return resSuccessCallback.bind(this)(data, next, this);
       }
       if (data.code === 200) {
         return next(null, data.data, data.code);
