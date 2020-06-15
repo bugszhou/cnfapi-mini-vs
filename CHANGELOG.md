@@ -1,3 +1,13 @@
+<a name="4.1.4"></a>
+## [4.1.4](https://github.com/bugszhou/cnfapi-mini-vs/compare/v4.1.3...v4.1.4) (2020-06-15)
+
+
+### Features
+
+* Before 增加事件 ([a27b157](https://github.com/bugszhou/cnfapi-mini-vs/commit/a27b157))
+
+
+
 <a name="4.1.3"></a>
 ## [4.1.3](https://github.com/bugszhou/cnfapi-mini-vs/compare/v4.1.2...v4.1.3) (2020-06-03)
 
