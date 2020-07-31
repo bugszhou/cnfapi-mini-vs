@@ -1,3 +1,13 @@
+<a name="4.1.5"></a>
+## [4.1.5](https://github.com/bugszhou/cnfapi-mini-vs/compare/v4.1.4...v4.1.5) (2020-07-31)
+
+
+### Bug Fixes
+
+* 修复sign相同一样 ([d236b72](https://github.com/bugszhou/cnfapi-mini-vs/commit/d236b72))
+
+
+
 <a name="4.1.4"></a>
 ## [4.1.4](https://github.com/bugszhou/cnfapi-mini-vs/compare/v4.1.3...v4.1.4) (2020-06-15)
 
