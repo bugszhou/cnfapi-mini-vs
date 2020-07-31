@@ -105,14 +105,14 @@ export default function (
         signData,
         postDataKeys,
       });
-      if (!apiConf.headers) {
+      if (!apiOpts.headers) {
         // eslint-disable-next-line
-        apiConf.headers = {};
+        apiOpts.headers = {};
       }
       // eslint-disable-next-line
-      apiConf.headers["Authorization-AppKey"] = appKey;
+      apiOpts.headers["Authorization-AppKey"] = appKey;
       // eslint-disable-next-line
-      apiConf.headers["Authorization-Sign"] = sha256()
+      apiOpts.headers["Authorization-Sign"] = sha256()
         .update(
           `${appKey}${JSON.stringify(signData)}${
             apiConf.headers["Authorization-Token"] || ""
@@ -123,7 +123,7 @@ export default function (
         apiOpts,
         apiConf,
         signData,
-        sign: apiConf.headers["Authorization-Sign"],
+        sign: apiOpts.headers["Authorization-Sign"],
         signStr: `${appKey}${JSON.stringify(signData)}${
           apiConf.headers["Authorization-Token"] || ""
         }${appCode}`,
