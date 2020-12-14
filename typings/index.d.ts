@@ -1,6 +1,6 @@
 /// <reference path="./api.d.ts" />
 
-export default function getApiInstance<IApiList>(
+declare function getApiInstance<IApiList>(
   opts: IMiAPI.IApiOptions,
 ): Api & IApiList;
 
@@ -11,5 +11,5 @@ declare class Api {
 }
 
 declare module "cnfapi-mini-vs" {
-  export = hash;
+    export default getApiInstance;
 }
