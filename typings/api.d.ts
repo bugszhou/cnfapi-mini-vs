@@ -31,6 +31,16 @@ declare namespace IMiAPI {
     params: IParams;
     log?: boolean;
     res?: string;
+    /**
+     * 是否需要携带token
+     */
+    requiredToken?: boolean;
+    /**
+     * 是否跳过签名
+     * true - 跳过签名
+     * false - 参与签名
+     */
+    isSkipSign?: boolean;
   }
 
   interface IApiList {
