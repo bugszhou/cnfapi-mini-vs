@@ -1,3 +1,13 @@
+<a name="4.1.12"></a>
+## [4.1.12](https://github.com/bugszhou/cnfapi-mini-vs/compare/v4.1.10...v4.1.12) (2020-12-21)
+
+
+### Features
+
+* 增加注释 ([c80c92a](https://github.com/bugszhou/cnfapi-mini-vs/commit/c80c92a))
+
+
+
 <a name="4.1.10"></a>
 ## [4.1.10](https://github.com/bugszhou/cnfapi-mini-vs/compare/v4.1.9...v4.1.10) (2020-12-21)
 
