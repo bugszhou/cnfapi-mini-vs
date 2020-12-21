@@ -5,6 +5,11 @@ declare namespace IMiAPI {
   interface IApiOpts<IReqData> {
     data?: IReqData;
     headers?: Record<string, string>;
+    /**
+     * 获取request队列对象，用于取消该次接口请求
+     * @param task 小程序wx.request队列对象
+     */
+    getRequestTask?(task: any): any;
   }
 
   interface IApiSuccess<IResData> {
