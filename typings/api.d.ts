@@ -14,7 +14,7 @@ declare namespace IMiAPI {
     param: string;
     isNeed: 0 | 1;
     required?: boolean;
-    type: string;
+    type?: string;
   }
 
   interface IParams {
