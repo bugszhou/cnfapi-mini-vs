@@ -1,3 +1,6 @@
+/**
+ * Api接口定义
+ */
 declare namespace IMiAPI {
   interface IApiOpts<IReqData> {
     data?: IReqData;
@@ -43,6 +46,9 @@ declare namespace IMiAPI {
     isSkipSign?: boolean;
   }
 
+  /**
+   * 服务端接口映射的类型定义集合
+   */
   interface IApiList {
     [key: string]: IApiItem;
   }
