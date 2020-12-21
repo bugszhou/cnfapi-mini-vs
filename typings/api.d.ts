@@ -13,6 +13,8 @@ declare namespace IMiAPI {
   interface IParam {
     param: string;
     isNeed: 0 | 1;
+    required?: boolean;
+    type: string;
   }
 
   interface IParams {
@@ -28,6 +30,7 @@ declare namespace IMiAPI {
     method: "POST" | "GET" | "PUT" | "post" | "get" | "put";
     params: IParams;
     log?: boolean;
+    res?: string;
   }
 
   interface IApiList {
