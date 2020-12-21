@@ -1,3 +1,13 @@
+<a name="4.1.9"></a>
+## [4.1.9](https://github.com/bugszhou/cnfapi-mini-vs/compare/v4.1.8...v4.1.9) (2020-12-21)
+
+
+### Bug Fixes
+
+* 必填改为选填 ([eb4ac42](https://github.com/bugszhou/cnfapi-mini-vs/commit/eb4ac42))
+
+
+
 <a name="4.1.8"></a>
 ## [4.1.8](https://github.com/bugszhou/cnfapi-mini-vs/compare/v4.1.7...v4.1.8) (2020-12-21)
 
