@@ -1,3 +1,13 @@
+<a name="4.1.13"></a>
+## [4.1.13](https://github.com/bugszhou/cnfapi-mini-vs/compare/v4.1.12...v4.1.13) (2020-12-21)
+
+
+### Features
+
+* 增加api typing ([2e35a1e](https://github.com/bugszhou/cnfapi-mini-vs/commit/2e35a1e))
+
+
+
 <a name="4.1.12"></a>
 ## [4.1.12](https://github.com/bugszhou/cnfapi-mini-vs/compare/v4.1.10...v4.1.12) (2020-12-21)
 
