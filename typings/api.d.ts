@@ -49,6 +49,10 @@ declare namespace IMiAPI {
      * false - 参与签名
      */
     isSkipSign?: boolean;
+    /**
+     * 接口请求参数的类型声明，与单个请求参数type配置互斥；优先paramsTyping的类型
+     */
+    paramsTyping?: string;
   }
 
   /**
