@@ -68,9 +68,9 @@ declare namespace IMiAPI {
     appKey: string;
     appCode: string;
     apiList: IApiList;
-    resSuccessCallback: any;
-    openResInterceptor: (opts?: any) => boolean;
-    resInterceptor: (
+    resSuccessCallback?: any;
+    openResInterceptor?: (opts?: any) => boolean;
+    resInterceptor?: (
       serverData: any,
       next: (...opts: any) => any,
       ctx: any,
