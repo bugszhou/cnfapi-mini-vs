@@ -1,3 +1,13 @@
+<a name="4.1.15"></a>
+## [4.1.15](https://github.com/bugszhou/cnfapi-mini-vs/compare/v4.1.14...v4.1.15) (2021-01-20)
+
+
+### Features
+
+* Modify typings ([64cfe3a](https://github.com/bugszhou/cnfapi-mini-vs/commit/64cfe3a))
+
+
+
 <a name="4.1.14"></a>
 ## [4.1.14](https://github.com/bugszhou/cnfapi-mini-vs/compare/v4.1.13...v4.1.14) (2020-12-23)
 
