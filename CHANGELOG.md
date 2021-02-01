@@ -1,3 +1,8 @@
+<a name="4.1.16"></a>
+## [4.1.16](https://github.com/bugszhou/cnfapi-mini-vs/compare/v4.1.15...v4.1.16) (2021-02-01)
+
+
+
 <a name="4.1.15"></a>
 ## [4.1.15](https://github.com/bugszhou/cnfapi-mini-vs/compare/v4.1.14...v4.1.15) (2021-01-20)
 
